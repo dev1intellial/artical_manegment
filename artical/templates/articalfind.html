@@ -1,0 +1,7 @@
+{% for i in artical %}
+    <img src="{{ i.artical.artical_imaga.url }}"> 
+    
+    <li>{{i.artical.tital}}</li>
+    <li>{{i.artical.content}}</li>
+    <li>{{i.tag}}</li>   
+    {% endfor %}

@@ -1,0 +1,9 @@
+{% for i in artical %}
+<img src="{{ i.artical.artical_imaga.url }}"> 
+<a href="{% url 'articaltag' i.id %}">Edit</a>
+<a href="{% url 'articaldelete' i.id %}">delete</a>
+
+<li>{{i.artical.tital}}</li>
+<li>{{i.artical.content}}</li>
+<li>{{i.tag}}</li>
+{% endfor %}

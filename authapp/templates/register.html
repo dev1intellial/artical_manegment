@@ -1,0 +1,11 @@
+<form action="{% url 'register' %}" method="post">
+{% csrf_token %}
+<label for="uname"><b>Username</b></label>
+    <li><input type='text' name='username' placeholder="username" ></li>
+    <label for="uname"><b>Password</b></label>
+    <li><input type='password' name='password' placeholder="password" ></li>
+    <button name="button" type="submit">Click Me!</button>
+    <li><input type='password' name='conformation' placeholder="conformation" ></li>
+    <input type="submit" value="submit">
+
+</form>

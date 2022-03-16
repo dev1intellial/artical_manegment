@@ -1,0 +1,8 @@
+<form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {{ form2.as_p }}
+    <input type="submit" value="savedraf" name="savedraf">
+    <input type="submit" value="publish" name="publish">
+    
+</form>
